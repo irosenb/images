@@ -32,6 +32,7 @@ gem 'paperclip'
 
 group :development, :test do
   gem 'rspec'
+  gem 'rspec-rails'
 end
 
 group :doc do

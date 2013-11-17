@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116181343) do
+ActiveRecord::Schema.define(version: 20131117043923) do
+
+  create_table "sites", force: true do |t|
+    t.text     "url"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "sites", ["user_id"], name: "index_sites_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -28,6 +28,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
+gem 'paperclip'
+
+group :development, :test do
+  gem 'rspec'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
 gem 'paperclip'
+gem 'twitter-bootstrap-rails'
 
 group :development, :test do
   gem 'rspec'
